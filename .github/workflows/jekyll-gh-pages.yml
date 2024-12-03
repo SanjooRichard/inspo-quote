@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+      - name: Install pnpm
+        run: npm install -g pnpm
       - name: Detect package manager
         id: detect-package-manager
         run: |
