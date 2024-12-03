@@ -1,0 +1,30 @@
+#root {
+  margin: 0 auto;
+  font-family: 'Best Valentina';
+}
+
+
+#grad {
+  background-image: linear-gradient(270deg, rgb(98, 0, 255), rgb(148, 0, 123));
+}
+
+.source {
+  display: flex;
+  justify-content: right;
+  font-size: 45px;
+  padding-top: 28px;
+}
+
+.quote {
+  font-size: 58px;
+  line-height: 80px;
+}
+
+.inspo-quote {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  padding-inline: 20%;
+  opacity: 0;
+}
