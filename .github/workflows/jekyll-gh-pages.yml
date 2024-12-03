@@ -44,11 +44,11 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build project
-        run: ${{ steps.detect-package-manager.outputs.runner }} pnpm run build
+        run: ${{ steps.detect-package-manager.outputs.runner }} run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./build
+          path: ./dist
   # Deployment job
   deploy:
     environment:
