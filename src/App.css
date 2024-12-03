@@ -1,6 +1,11 @@
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('assets/Magnolia Script.otf') format('opentype');
+}
+
 #root {
   margin: 0 auto;
-  font-family: 'Best Valentina';
+  font-family: 'MyCustomFont', sans-serif;
 }
 
 
@@ -11,12 +16,12 @@
 .source {
   display: flex;
   justify-content: right;
-  font-size: 45px;
+  font-size: 35px;
   padding-top: 28px;
 }
 
 .quote {
-  font-size: 58px;
+  font-size: 48px;
   line-height: 80px;
 }
 
