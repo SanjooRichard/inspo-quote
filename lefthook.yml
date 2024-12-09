@@ -10,9 +10,3 @@ pre-commit:
 post-push:
   deploy:
     command: "pnpm run deploy"
-
-commit-msg:
-  parallel: true
-  commands:
-    commitlint:
-      run: "pnpx commitlint --edit"
