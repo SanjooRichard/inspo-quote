@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build && cp dist/index.html dist/404.html",
     "predeploy": "pnpm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "pnpm run predeploy && gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -20,7 +20,10 @@
     "react-router-dom": "^7.0.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
     "@eslint/js": "^9.15.0",
+    "@evilmartians/lefthook": "^1.9.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
