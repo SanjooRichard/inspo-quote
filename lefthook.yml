@@ -7,7 +7,6 @@ pre-commit:
   # For larger commits, one can utilize spell checks, type checks, ESLint,
   # and StyleLint in parallel, saving tons of time for developers.
   parallel: true
-  package_manager: pnpm
   commands:
     lint:
       glob: '*.{js,ts,jsx,tsx}' # glob filter for list of files
