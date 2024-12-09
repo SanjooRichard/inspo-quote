@@ -5,7 +5,7 @@
 #
 pre-commit:
   lint:
-    command: pnpm run lint
+    command: pnpm exec lint
 
 post-push:
   deploy:
