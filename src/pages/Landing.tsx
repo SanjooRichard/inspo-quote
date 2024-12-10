@@ -1,8 +1,8 @@
-import { motion } from "framer-motion";
-import { data } from "../assets/constant";
-import { useState, useEffect } from "react";
-import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa6";
-import { useNavigate } from "react-router-dom";
+import { motion } from 'framer-motion';
+import { data } from '../assets/constant';
+import { useState, useEffect } from 'react';
+import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa6';
+import { useNavigate } from 'react-router-dom';
 
 export const LandingPage = () => {
   const someRandomNumber = Math.floor(Math.random() * data.length);
@@ -40,12 +40,12 @@ export const LandingPage = () => {
       <div className="quote">
         <FaQuoteLeft size="78px" />
         {data[random].quote}
-        <FaQuoteRight size="78px" style={{ marginBottom: "-28px" }} />
+        <FaQuoteRight size="78px" style={{ marginBottom: '-28px' }} />
       </div>
       <div className="source">
         <motion.button
-          onClick={() => navigate("/all-quotes")}
-          style={{ fontSize: "20px", backgroundColor: "#3e00a0" }}
+          onClick={() => navigate('/all-quotes')}
+          style={{ fontSize: '20px', backgroundColor: '#3e00a0' }}
         >
           View All Quotes
         </motion.button>

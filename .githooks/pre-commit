@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Run Prettier
+pnpm prettier --write .
+
+if [ $? -ne 0 ]; then
+  echo "Prettier formatting failed, aborting commit."
+  exit 1
+fi
+
+# Run linters
+pnpm eslint .
+
+if [ $? -ne 0 ]; then
+  echo "Linting failed, aborting commit."
+  exit 1
+fi
+
+exit 0

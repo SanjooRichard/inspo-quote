@@ -25,9 +25,6 @@ devDependencies:
   '@eslint/js':
     specifier: ^9.15.0
     version: 9.16.0
-  '@evilmartians/lefthook':
-    specifier: ^1.9.0
-    version: 1.9.0
   '@types/react':
     specifier: ^18.3.12
     version: 18.3.12
@@ -52,6 +49,9 @@ devDependencies:
   globals:
     specifier: ^15.12.0
     version: 15.13.0
+  prettier:
+    specifier: ^3.4.2
+    version: 3.4.2
   typescript:
     specifier: ~5.6.2
     version: 5.6.3
@@ -522,14 +522,6 @@ packages:
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     dependencies:
       levn: 0.4.1
-    dev: true
-
-  /@evilmartians/lefthook@1.9.0:
-    resolution: {integrity: sha512-a6+eZ/6TlE3ILu0B1GGUC90X3nysSfcUZo5mQMwY0aF2Djw5Faf6EYZ7Il8oCxxgNmsZ2tGn9EgOPNQTqT2G+g==}
-    cpu: [x64, arm64, ia32]
-    os: [darwin, linux, win32]
-    hasBin: true
-    requiresBuild: true
     dev: true
 
   /@humanfs/core@0.19.1:
@@ -1770,6 +1762,12 @@ packages:
   /prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
+    dev: true
+
+  /prettier@3.4.2:
+    resolution: {integrity: sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /punycode@2.3.1:
